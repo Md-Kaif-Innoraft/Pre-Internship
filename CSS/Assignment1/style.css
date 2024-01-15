@@ -1,0 +1,32 @@
+
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header{
+    height: 125px;
+    background-color: rgb(234, 87, 172);
+    margin: 5px;
+}
+
+.card1{
+    height: 310px;
+    background-color: rgb(233, 53, 113);
+    width: 70%;
+    margin: 5px;
+}
+
+.card2{
+    height: 310px;
+    background-color:  rgb(238, 23, 94);
+    width: 30%;
+    margin: 5px;
+}
+
+.footer{
+    height: 125px;
+    background-color:  rgb(156, 9, 58);
+    margin: 5px;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .green {
+            height: 8vh;
+            background-color: rgb(229,238,204);
+            border: 2px solid grey;
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        .hello-world {
+            display: none;
+            height: 25vh;
+            background-color: rgb(223,237,255);
+            border: 2px solid grey;
+            text-align: center;
+            padding-top: 100px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="green">
+        <h2>Click me to slide down panel</h2>
+    </div>
+    <div class="hello-world">
+        <h2>Hello World!</h2>
+    </div>
+
+    <script>
+        $(".green").click(function(){
+            $(".hello-world").slideDown();
+        });
+    </script>
+
+</body>
+
+</html>
