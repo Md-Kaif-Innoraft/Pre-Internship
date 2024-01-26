@@ -1,8 +1,6 @@
-
-
-.cards{
-    display: flex;
-    justify-content: space-between;
+*{
+    margin: 0;
+    padding: 0;
 }
 
 .header{
@@ -10,6 +8,13 @@
     background-color: rgb(234, 87, 172);
     margin: 5px;
 }
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+}
+
+
 
 .card1{
     height: 310px;
