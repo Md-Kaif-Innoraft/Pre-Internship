@@ -1,146 +1,166 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
+
+/* Container for the content to follow the same alignment */
+
 .container{
-    max-width: 1200px;
+    width: 1300px;
     margin: 0 auto;
 }
 
-.header-wrapper{
-    background-color:rgb(217,217,217);
+
+/* Reuseable Classes */
+
+.display-inline li{
+    display: inline-block;
 }
 
-.nav_bar{
+/* Header Starts Here  */
+
+header{
+    background: #D9D9D9;
+}
+
+.header-container{
     display: flex;
     justify-content: space-between;
-    height: 70px;
-    color: rgb(75,124,163);
+    align-items: center;
 }
 
-nav ul{
-    padding-top: 20px;
+nav ul li a{
+    text-decoration: none;
+    color: #337694;
+    padding: 20px 30px;
 }
 
-header h1{
-    padding-top: 20px ;
-    padding-left:60px;
-
-}
-
-header h1:hover{
-    color: white;
-    cursor: pointer;
-}
-
-nav ul li{
-    display: inline;
-    padding: 20px;
-}
-
-nav ul li:hover{
+nav ul li a:hover{
     background-color: black;
-    cursor:pointer;
     color: white;
 }
+/* Header Emds Here  */
+
+/* Banner Starts Here  */
+
 .banner-wrapper{
-    height: 40vh;
-    background-color: rgb(6,163,204);
-    color: white;
-    text-align: center;
+    height: 300px;
+    background-color: #4AA5CD;
 }
 
 .banner{
     position: relative;
-}
-
-.banner-larrow{
-    position: absolute;
-    left: 0;
-    top: 50%;
-}
-
-.banner-rarrow{
-    position: absolute;
-    right: 0;
-    top: 50%;
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
 }
 .banner h1{
-    padding-top: 80px;
-    font-size: 70px;
+    padding: 100px 0 ;
 }
+
+.banner-left-logo{
+    position: absolute;
+    top: 125px;
+    left: -20px;
+}
+
+
+.banner-right-logo{
+    position: absolute;
+    top: 125px;
+    right: 20px;
+}
+/* Banner Ends Here  */
+
+/* Box Section Starts Here */
 
 .box{
     display: flex;
-    justify-content: space-between;
-    gap: 10px;
-    margin: 15px 0;
+    margin: 20px 0;
+    gap: 20px;
 }
 
-.leftbox{
-    height: 60vh;
-    width: 44vw;
-    background-color: rgb(255,228,105);
+.box-left{
+    width: 40%;
+    height: 600px;
+    background-color: #FEE369;
     position: relative;
 }
 
-.left-float{
-    height: 45vh;
-    width: 18vw;
-    background-color: rgb(211,158,214);
+.left-top{
+    height: 436px;
+    width: 338px;
+    background-color: #D39ED6;
     position: absolute;
-    top: 30px;
-    left: -40px;
-
+    top: 51px;
+    left: -95px;
 }
 
-.rightbox{
-    height: 60vh;
-    width: 52vw
+.box-right{
+    width: 60%;
+    height: 600px;
 }
 
-.upper{
-    /* height: 35vh; */
-    height: 70%;
-    background-color: rgb(237,135,25);
+.right-up{
+    background-color: #ED8719;
+    height: 60%;
+    padding: 30px;
+}
+
+.right-up input, .right-up select{
+    width: 400px;
+    height: 50px;
+    margin: 10px 0;
+    background-color: #F1A448;
+    border: 0.5px solid #dbd9d9;
     
-}
-.lower{
-    /* height: 24vh; */
-    height: 28%;
-    background-color: rgb(138,227,59);
-    margin-top: 10px;
+   
 }
 
-form{
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    
+.right-up button{
+   padding: 12px 35px;
+   background-color: #F1A448;
+   border: 0.5px solid #dbd9d9;
+   color: white;
+   margin-top: 10px;
 }
-
-form input,select{
-    width: 320px;
-    height: 30px;
-    margin-top: 10px;
-    background-color: rgb(250, 206, 124);
+.right-down{
+    background-color: #8AE33B;
+    height: 36%;
+    margin-top: 21px;
 }
+/* Box Section Ends Here */
 
-.btn{
-    margin-left: 20px;
-    height: 30px;
-    width: 80px;
+
+/* Footer section starts here */
+
+footer{
+    background-color: #337694;
 }
-
 .footer{
-    height: 10vh;
-    background-color:  rgb(3, 100, 139);
-    color: white;
+    display: flex;
+    padding: 20px;
     text-align: center;
+    justify-content: center;
 }
 
-.footer p{
-    padding-top: 20px;
+.footer li{
+    padding: 20px;
 }
+
+.footer ul li a{
+    padding-right: 20px;
+    text-decoration: none;
+    color: white;
+    border-right: 1px solid #ccc;
+}
+
+.footer ul li:last-child a{
+    border-right: none  ;
+}
+
+/* Footer section Ends here */
